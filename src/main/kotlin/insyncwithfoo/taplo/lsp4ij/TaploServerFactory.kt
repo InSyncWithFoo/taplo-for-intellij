@@ -11,6 +11,9 @@ import insyncwithfoo.taplo.configurations.taploConfigurations
 import insyncwithfoo.taplo.configurations.taploExecutable
 
 
+internal const val SERVER_ID = "taplo"
+
+
 internal class TaploServerFactory : LanguageServerFactory, LanguageServerEnablementSupport {
     
     override fun isEnabled(project: Project): Boolean {

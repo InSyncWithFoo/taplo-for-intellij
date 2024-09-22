@@ -4,9 +4,9 @@ import com.intellij.execution.configurations.GeneralCommandLine
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
 import com.intellij.platform.lsp.api.ProjectWideLspServerDescriptor
-import com.intellij.platform.navbar.frontend.message
 import insyncwithfoo.taplo.configurations.taploConfigurations
 import insyncwithfoo.taplo.isTOMLFile
+import insyncwithfoo.taplo.message
 import insyncwithfoo.taplo.path
 import java.nio.file.Path
 
@@ -21,7 +21,7 @@ internal class TaploServerDescriptor(project: Project, private val executable: P
         file.isTOMLFile
     
     override fun createCommandLine() = GeneralCommandLine().apply {
-        withWorkingDirectory(project.path)
+        withWorkDirectory(project.path.toString())
         withCharset(Charsets.UTF_8)
         
         withExePath(executable.toString())

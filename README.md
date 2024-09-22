@@ -15,7 +15,11 @@ is a language server for TOML.
 
 You must [have Taplo installed][3] to use this plugin.
 Note that the installation must not come from NPM.
-The executable will then be detected automatically and invoked on file open.
+The executable will then be detected automatically.
+
+Additionally, if you are using IntelliJ IDEA or PyCharm Community Edition,
+the <i>LSP4IJ</i> plugin must be installed and enabled.
+Once it is installed, change the running mode to <i>LSP4IJ</i>.
 
 
 ## Logging

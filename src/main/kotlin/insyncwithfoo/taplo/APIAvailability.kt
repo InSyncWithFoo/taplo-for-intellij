@@ -1,9 +1,7 @@
 package insyncwithfoo.taplo
 
-import com.intellij.execution.wsl.target.WslTargetEnvironmentConfiguration
 import com.intellij.ide.plugins.PluginManagerCore
 import com.intellij.openapi.extensions.PluginId
-import com.intellij.openapi.util.SystemInfo
 import com.intellij.platform.lsp.api.LspServerSupportProvider
 
 

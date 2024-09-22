@@ -21,3 +21,7 @@ internal val defaultProject: Project
 
 internal val Project.path: Path?
     get() = guessProjectDir()?.toNioPathOrNull()?.toNullIfNotExists()
+
+
+internal val Project.isNormal: Boolean
+    get() = !this.isDefault && !this.isDisposed

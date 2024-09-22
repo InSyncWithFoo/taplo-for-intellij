@@ -3,8 +3,6 @@ package insyncwithfoo.taplo.configurations
 import com.intellij.openapi.components.BaseState
 import com.intellij.util.xmlb.XmlSerializerUtil
 import insyncwithfoo.taplo.Labeled
-import insyncwithfoo.taplo.lsp4ijIsAvailable
-import insyncwithfoo.taplo.lspIsAvailable
 import insyncwithfoo.taplo.message
 
 
@@ -19,15 +17,7 @@ internal enum class RunningMode(override val label: String) : Labeled {
 }
 
 
-private val defaultRunningMode: RunningMode
-    get() = when {
-        lspIsAvailable -> RunningMode.LSP
-        lsp4ijIsAvailable -> RunningMode.LSP4IJ
-        else -> RunningMode.DISABLED
-    }
-
-
 internal class TaploConfigurations : BaseState() {
     var executable by string(null)
-    var runningMode by enum(defaultRunningMode)
+    var runningMode by enum(RunningMode.LSP)
 }
