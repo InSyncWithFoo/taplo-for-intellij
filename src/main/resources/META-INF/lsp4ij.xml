@@ -1,0 +1,18 @@
+<idea-plugin>
+	<extensions defaultExtensionNs="com.redhat.devtools.lsp4ij">
+		<!--suppress PluginXmlCapitalization -->
+		<server
+			id="insyncwithfoo.taplo"
+			bundle="messages.taplo"
+			nameKey="languageServer.presentableName"
+			factoryClass="insyncwithfoo.taplo.lsp4ij.TaploServerFactory"
+		/>
+		
+		<languageMapping
+			serverId="insyncwithfoo.taplo"
+			language="TOML"
+			languageId="toml"
+			documentMatcher="insyncwithfoo.taplo.lsp4ij.TaploServerDocumentMatcher"
+		/>
+	</extensions>
+</idea-plugin>
