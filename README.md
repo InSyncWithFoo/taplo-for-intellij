@@ -1,10 +1,9 @@
 # Taplo for IntelliJ
 
 [![Build](https://github.com/InSyncWithFoo/taplo-for-intellij/actions/workflows/build.yaml/badge.svg)][4]
-[![Docs](https://github.com/InSyncWithFoo/taplo-for-intellij/actions/workflows/docs.yaml/badge.svg)][5]
-[![Version](https://img.shields.io/jetbrains/plugin/v/25387)][6]
-[![Rating](https://img.shields.io/jetbrains/plugin/r/rating/25387)][7]
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/25387)][8]
+[![Version](https://img.shields.io/jetbrains/plugin/v/25387)][5]
+[![Rating](https://img.shields.io/jetbrains/plugin/r/rating/25387)][6]
+[![Downloads](https://img.shields.io/jetbrains/plugin/d/25387)][7]
 
 <!-- Plugin description -->
 [Taplo][1], also known as "[Even better TOML][2]",
@@ -44,10 +43,10 @@ com.intellij.platform.lsp
 
 ## Installation
 
-This plugin is [available on the Marketplace][6].
-You can also download the ZIP files manually from [the <i>Releases</i> tab][9],
-[the `build` branch][10] or [the <i>Actions</i> tab][11]
-and follow the instructions described [here][12].
+This plugin is [available on the Marketplace][7].
+You can also download the ZIP files manually from [the <i>Releases</i> tab][8],
+[the `build` branch][9] or [the <i>Actions</i> tab][10]
+and follow the instructions described [here][11].
 
 Currently supported versions:
 2024.1 (build 241.14494.241) - 2024.3.* (build 243.*).
@@ -58,20 +57,19 @@ Currently supported versions:
 Parts of this repository were taken or derived from:
 
 * [@tamasfe/taplo][1]
-* [@JetBrains/intellij-community][13]
-* [@JetBrains/intellij-platform-plugin-template][14]
-* [@koxudaxi/ruff-pycharm-plugin][15]
+* [@JetBrains/intellij-community][12]
+* [@JetBrains/intellij-platform-plugin-template][13]
+* [@koxudaxi/ruff-pycharm-plugin][14]
 
 
   [4]: https://github.com/InSyncWithFoo/taplo-for-intellij/actions/workflows/build.yaml
-  [5]: https://github.com/InSyncWithFoo/taplo-for-intellij/actions/workflows/docs.yaml
-  [6]: https://plugins.jetbrains.com/plugin/25387/versions
-  [7]: https://plugins.jetbrains.com/plugin/25387/reviews
-  [8]: https://plugins.jetbrains.com/plugin/25387
-  [9]: https://github.com/InSyncWithFoo/taplo-for-intellij/releases
-  [10]: https://github.com/InSyncWithFoo/taplo-for-intellij/tree/build
-  [11]: https://github.com/InSyncWithFoo/taplo-for-intellij/actions/workflows/build.yaml
-  [12]: https://www.jetbrains.com/help/pycharm/managing-plugins.html#install_plugin_from_disk
-  [13]: https://github.com/JetBrains/intellij-community
-  [14]: https://github.com/JetBrains/intellij-platform-plugin-template
-  [15]: https://github.com/koxudaxi/ruff-pycharm-plugin
+  [5]: https://plugins.jetbrains.com/plugin/25387/versions
+  [6]: https://plugins.jetbrains.com/plugin/25387/reviews
+  [7]: https://plugins.jetbrains.com/plugin/25387
+  [8]: https://github.com/InSyncWithFoo/taplo-for-intellij/releases
+  [9]: https://github.com/InSyncWithFoo/taplo-for-intellij/tree/build
+  [10]: https://github.com/InSyncWithFoo/taplo-for-intellij/actions/workflows/build.yaml
+  [11]: https://www.jetbrains.com/help/pycharm/managing-plugins.html#install_plugin_from_disk
+  [12]: https://github.com/JetBrains/intellij-community
+  [13]: https://github.com/JetBrains/intellij-platform-plugin-template
+  [14]: https://github.com/koxudaxi/ruff-pycharm-plugin
