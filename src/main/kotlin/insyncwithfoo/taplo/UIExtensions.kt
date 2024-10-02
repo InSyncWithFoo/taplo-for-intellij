@@ -12,12 +12,20 @@ import com.intellij.ui.dsl.builder.bindText
 import javax.swing.JComponent
 
 
-internal fun Row.singleFileTextField() =
-    textFieldWithBrowseButton(fileChooserDescriptor = FileChooserDescriptorFactory.createSingleFileNoJarsDescriptor())
+internal fun Row.singleFileTextField(): Cell<TextFieldWithBrowseButton> {
+    val (browseDialogTitle, project, fileChosen) = Triple(null, null, null)
+    val fileChooserDescriptor = FileChooserDescriptorFactory.createSingleFileNoJarsDescriptor()
+    
+    return textFieldWithBrowseButton(browseDialogTitle, project, fileChooserDescriptor, fileChosen)
+}
 
 
-internal fun Row.singleFolderTextField() =
-    textFieldWithBrowseButton(fileChooserDescriptor = FileChooserDescriptorFactory.createSingleFolderDescriptor())
+internal fun Row.singleFolderTextField(): Cell<TextFieldWithBrowseButton> {
+    val (browseDialogTitle, project, fileChosen) = Triple(null, null, null)
+    val fileChooserDescriptor = FileChooserDescriptorFactory.createSingleFolderDescriptor()
+    
+    return textFieldWithBrowseButton(browseDialogTitle, project, fileChooserDescriptor, fileChosen)
+}
 
 
 internal fun <C : JComponent> Cell<C>.applyReturningComponent(block: Cell<C>.() -> Unit) =
