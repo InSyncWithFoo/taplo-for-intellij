@@ -36,5 +36,11 @@
 			key="configurations.displayName"
 			instance="insyncwithfoo.taplo.configurations.Configurable"
 		/>
+		
+		<fileIconProvider
+			id="insyncwithfoo.taplo.misc.TaploFileIconProvider"
+			order="first"
+			implementation="insyncwithfoo.taplo.misc.TaploFileIconProvider"
+		/>
 	</extensions>
 </idea-plugin>
