@@ -1,3 +1,15 @@
+> [!NOTE]
+> Taplo itself [is being deprecated][0-1] and hence also this plugin.
+> 
+> Use [Tombi][0-2] and [its plugin][0-3] instead.
+
+
+  [0-1]: https://github.com/tamasfe/taplo/issues/715
+  [0-2]: https://github.com/tombi-toml/tombi
+  [0-3]: https://plugins.jetbrains.com/plugin/28017-tombi
+
+----
+
 # Taplo for IntelliJ
 
 [![Build](https://github.com/InSyncWithFoo/taplo-for-intellij/actions/workflows/build.yaml/badge.svg)][4]
